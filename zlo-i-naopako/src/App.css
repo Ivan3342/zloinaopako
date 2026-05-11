@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+@theme {
+  --color-sandy-brown-50: #fef2e7;
+  --color-sandy-brown-100: #fce6cf;
+  --color-sandy-brown-200: #f9cc9f;
+  --color-sandy-brown-300: #f7b36e;
+  --color-sandy-brown-400: #f4993e;
+  --color-sandy-brown-500: #f1800e;
+  --color-sandy-brown-600: #c1660b;
+  --color-sandy-brown-700: #914c08;
+  --color-sandy-brown-800: #603306;
+  --color-sandy-brown-900: #301a03;
+  --color-sandy-brown-950: #221202;
+
+  --color-dusty-olive-50: #f1f4f1;
+  --color-dusty-olive-100: #e3e8e4;
+  --color-dusty-olive-200: #c6d2c8;
+  --color-dusty-olive-300: #aabbad;
+  --color-dusty-olive-400: #8ea492;
+  --color-dusty-olive-500: #718e77;
+  --color-dusty-olive-600: #5b715f;
+  --color-dusty-olive-700: #445547;
+  --color-dusty-olive-800: #2d392f;
+  --color-dusty-olive-900: #171c18;
+  --color-dusty-olive-950: #101411;
+
+  --color-graphite-50: #f2f3f2;
+  --color-graphite-100: #e4e7e4;
+  --color-graphite-200: #caceca;
+  --color-graphite-300: #afb6af;
+  --color-graphite-400: #959d95;
+  --color-graphite-500: #7a857a;
+  --color-graphite-600: #626a62;
+  --color-graphite-700: #495049;
+  --color-graphite-800: #313531;
+  --color-graphite-900: #181b18;
+  --color-graphite-950: #111311;
+
+  --color-toffee-brown-50: #f7f1ed;
+  --color-toffee-brown-100: #efe4dc;
+  --color-toffee-brown-200: #e0c8b8;
+  --color-toffee-brown-300: #d0ad95;
+  --color-toffee-brown-400: #c19171;
+  --color-toffee-brown-500: #b1764e;
+  --color-toffee-brown-600: #8e5e3e;
+  --color-toffee-brown-700: #6a472f;
+  --color-toffee-brown-800: #472f1f;
+  --color-toffee-brown-900: #231810;
+  --color-toffee-brown-950: #19100b;
+
+  --color-dark-coffee-50: #f9f2ec;
+  --color-dark-coffee-100: #f3e5d8;
+  --color-dark-coffee-200: #e6cbb2;
+  --color-dark-coffee-300: #dab18b;
+  --color-dark-coffee-400: #cd9765;
+  --color-dark-coffee-500: #c17d3e;
+  --color-dark-coffee-600: #9a6432;
+  --color-dark-coffee-700: #744b25;
+  --color-dark-coffee-800: #4d3219;
+  --color-dark-coffee-900: #27190c;
+  --color-dark-coffee-950: #1b1209;
+}
