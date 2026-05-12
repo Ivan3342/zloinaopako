@@ -13,7 +13,21 @@ function App() {
         </button>
       </header>
 
-      <main></main>
+      <main>
+        {/* main */}
+        <div className='flex flex-col items-center justify-center p-10 bg-[url("\src\assets\images\pexels-fewmiracles-497047241-20011903(2).jpg")] bg-center bg-cover bg-no-repeat h-224 bg-opacity-50' >
+          <h1 className='text-center text-white text-2xl'>Mesto gde se loše ideje pretvaraju u najbolje uspomene.</h1> 
+        </div>
+        {/* about */}
+        <div className='p-10'>
+
+          <h1 className='text-xl font-bold text-center'>O nama</h1>
+          <h3 className='text-center m-7 font-thin text-2xl italic'>"Mesto gde se loše ideje pretvaraju u najbolje uspomene."</h3>
+          <p className='text-justify'>Kažu da se najbolje priče dešavaju kad krene po zlu. Mi smo tu da tim pričama damo ukus. Uz pažljivo birane craft koktele, atmosferu koja ne poznaje kompromise i ekipu koja zna zašto ste tu, nudimo utočište svima koji traže nešto autentično. Vidimo se na naopakoj strani grada.</p>
+
+        </div>
+
+      </main>
 
       <footer className='bg-dark-coffee-900 text-dusty-olive-400 p-6'>
 
