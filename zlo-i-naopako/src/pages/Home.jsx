@@ -24,7 +24,7 @@ function Home() {
             <h3 className='text-white text-lg'>MENI</h3>
             <h1 className='text-white text-2xl font-medium'>Otkrijte našu ponudu</h1>
             <div className='w-50 h-0.5 bg-white'></div>
-            <NavLink to="/menu" className=' px-10 py-3 text-white font-bold text-xl border-white border-2 rounded-lg bg-[#00000087] cursor-pointer hover:bg-black transition-all hover:scale-105'>MENI</NavLink>
+            <NavLink to="/menu" className='hover:shadow-xl px-10 py-3 text-white font-bold text-xl border-white border-2 rounded-lg bg-[#00000087] cursor-pointer hover:bg-black transition-all hover:scale-105'>MENI</NavLink>
           </div>
 
         </div>
@@ -35,7 +35,7 @@ function Home() {
             <h3 className='text-white text-lg'>LOKACIJA</h3>
             <h1 className='text-white text-2xl font-medium'>Saznajte kako doći do nas</h1>
             <div className='w-50 h-0.5 bg-white'></div>
-            <a href='#' className=' px-10 py-3 text-white font-bold text-xl border-white border-2 rounded-lg bg-[#00000087] cursor-pointer hover:bg-black transition-all hover:scale-105'>OTVORI MAPE</a>
+            <a href='https://maps.app.goo.gl/QKjB52n812CXhGyx8' className='hover:shadow-xl px-10 py-3 text-white font-bold text-xl border-white border-2 rounded-lg bg-[#00000087] cursor-pointer hover:bg-black transition-all hover:scale-105'>OTVORI MAPE</a>
           </div>
 
         </div>

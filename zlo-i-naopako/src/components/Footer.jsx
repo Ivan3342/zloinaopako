@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 
 function Footer() {
   return (
@@ -8,8 +9,8 @@ function Footer() {
         <div className='flex items-center gap-50'>
           <h1 className='text-2xl font-medium text-white'>Zapratite nas!</h1>
           <span className='flex items-center'>
-            <a href="#"><img className='w-10 hover:scale-110 transition-transform' src="src\assets\images\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
-            <a href="#"><img className='w-10 hover:scale-110 transition-transform' src="src\assets\images\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
+            <a href="https://www.instagram.com/__zloinaopako/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
+            <a href="https://www.facebook.com/zloinaopakokg/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
           </span>
         </div>
 
@@ -26,9 +27,10 @@ function Footer() {
           <div>
             <h2 className='text-lg font-bold'>Navigacija</h2>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Home</a></li>
-              <li><a href="">Home</a></li>
+              <li><NavLink to='/'>Pocetna</NavLink></li>
+              <li><NavLink to='menu'>Meni</NavLink></li>
+              <li><a href='https://maps.app.goo.gl/QKjB52n812CXhGyx8'>Lokacija</a></li>
+              <li><NavLink to='gallery'>Galerija</NavLink></li>
             </ul>
           </div>
         </div>
