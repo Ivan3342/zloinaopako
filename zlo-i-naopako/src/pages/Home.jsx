@@ -6,7 +6,7 @@ function Home() {
     <>
     <main>
         {/* main */}
-        <div className='flex flex-col items-center justify-center p-10 bg-[url("\src\assets\images\pexels-fewmiracles-497047241-20011903(2).jpg")] bg-center bg-cover bg-no-repeat h-215 bg-opacity-50' >
+        <div className='flex flex-col items-center justify-center bg-[url("\src\assets\images\pexels-fewmiracles-497047241-20011903(2).webp")] bg-center bg-cover bg-no-repeat h-215 bg-opacity-50' >
           <h1 className='text-center text-white text-2xl italic w-100'>Mesto gde se loše ideje pretvaraju u najbolje uspomene.</h1> 
         </div>
         {/* about */}

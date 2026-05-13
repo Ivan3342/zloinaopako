@@ -14,12 +14,12 @@ function App() {
       <Header></Header>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<h1 className='pt-10 pl-10 h-screen font-medium text-5xl'>404 - Page Not Found</h1>} />
       </Routes>
-
       <Footer></Footer>
     </>
   )

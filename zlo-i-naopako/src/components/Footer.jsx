@@ -9,8 +9,8 @@ function Footer() {
         <div className='flex items-center gap-50'>
           <h1 className='text-2xl font-medium text-white'>Zapratite nas!</h1>
           <span className='flex items-center'>
-            <a href="https://www.instagram.com/__zloinaopako/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
-            <a href="https://www.facebook.com/zloinaopakokg/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
+            <a href="https://www.instagram.com/__zloinaopako/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\icons\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
+            <a href="https://www.facebook.com/zloinaopakokg/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\icons\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
           </span>
         </div>
 
