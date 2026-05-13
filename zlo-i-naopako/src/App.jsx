@@ -15,8 +15,8 @@ function App() {
 
       <main>
         {/* main */}
-        <div className='flex flex-col items-center justify-center p-10 bg-[url("\src\assets\images\pexels-fewmiracles-497047241-20011903(2).jpg")] bg-center bg-cover bg-no-repeat h-224 bg-opacity-50' >
-          <h1 className='text-center text-white text-2xl'>Mesto gde se loše ideje pretvaraju u najbolje uspomene.</h1> 
+        <div className='flex flex-col items-center justify-center p-10 bg-[url("\src\assets\images\pexels-fewmiracles-497047241-20011903(2).jpg")] bg-center bg-cover bg-no-repeat h-215 bg-opacity-50' >
+          <h1 className='text-center text-white text-2xl italic w-100'>Mesto gde se loše ideje pretvaraju u najbolje uspomene.</h1> 
         </div>
         {/* about */}
         <div className='p-10'>
@@ -26,16 +26,28 @@ function App() {
           <p className='text-justify'>Kažu da se najbolje priče dešavaju kad krene po zlu. Mi smo tu da tim pričama damo ukus. Uz pažljivo birane craft koktele, atmosferu koja ne poznaje kompromise i ekipu koja zna zašto ste tu, nudimo utočište svima koji traže nešto autentično. Vidimo se na naopakoj strani grada.</p>
 
         </div>
+        {/* menu */}
+        <div className='p-10 '>
+
+          <div className='flex flex-col gap-5 items-center justify-center p-10 h-100 rounded-xl bg-[url("\src\assets\images\695702762_18350917681214596_5360166206163605931_n.jpg")] bg-no-repeat bg-cover'>
+            <h3 className='text-white text-lg'>MENI</h3>
+            <h1 className='text-white text-2xl font-medium'>Otkrijte našu ponudu</h1>
+            <div className='w-50 h-0.5 bg-white'></div>
+            <button className=' px-10 py-3 text-white font-bold text-xl border-white border-2 rounded-lg bg-[#00000087] cursor-pointer hover:bg-black transition-all hover:scale-105'>MENI</button>
+          </div>
+
+        </div>
+
 
       </main>
 
-      <footer className='bg-dark-coffee-900 text-dusty-olive-400 p-6'>
+      <footer className='bg-dark-coffee-900 text-dusty-olive-100 p-6'>
 
         <div className='flex items-center gap-50'>
           <h1 className='text-2xl font-medium text-white'>Zapratite nas!</h1>
           <span className='flex items-center'>
-            <a href="#"><img className='w-10' src="src\assets\images\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
-            <a href="#"><img className='w-10' src="src\assets\images\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
+            <a href="#"><img className='w-10 hover:scale-110 transition-transform' src="src\assets\images\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
+            <a href="#"><img className='w-10 hover:scale-110 transition-transform' src="src\assets\images\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
           </span>
         </div>
 
