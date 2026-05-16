@@ -27,10 +27,10 @@ function Footer() {
           <div>
             <h2 className='text-lg font-bold text-sandy-brown-50'>Navigacija</h2>
             <ul>
-              <li><NavLink to='/'>Pocetna</NavLink></li>
-              <li><NavLink to='menu'>Meni</NavLink></li>
-              <li><a href='https://maps.app.goo.gl/QKjB52n812CXhGyx8'>Lokacija</a></li>
-              <li><NavLink to='gallery'>Galerija</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='/'>Pocetna</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='menu'>Meni</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><a href='https://maps.app.goo.gl/QKjB52n812CXhGyx8'>Lokacija</a></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='gallery'>Galerija</NavLink></li>
             </ul>
           </div>
         </div>
