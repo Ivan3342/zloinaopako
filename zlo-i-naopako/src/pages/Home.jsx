@@ -18,7 +18,7 @@ function Home() {
 
         </div>
         {/* menu */}
-        <div className='p-10 '>
+        <div className='p-10 text-center'>
 
           <div className='flex flex-col gap-5 items-center justify-center p-10 h-100 rounded-xl bg-[url("\src\assets\images\695702762_18350917681214596_5360166206163605931_n.webp")] bg-no-repeat bg-cover'>
             <h3 className='text-white text-lg'>MENI</h3>
@@ -29,7 +29,7 @@ function Home() {
 
         </div>
         {/* maps */}
-        <div className='p-10 '>
+        <div className='p-10 text-center'>
 
           <div className='flex flex-col gap-5 items-center justify-center p-10 h-100 rounded-xl bg-[url("\src\assets\images\598579395_18330967441214596_7686038251437798307_n.webp")] bg-no-repeat bg-cover bg-center'>
             <h3 className='text-white text-lg'>LOKACIJA</h3>
