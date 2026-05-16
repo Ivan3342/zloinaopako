@@ -48,26 +48,26 @@ function Home() {
           </div>
         </div>
         {/* about */}
-        <div className='p-10 flex flex-col gap-10 md:flex-row'>
+        <div className='mt-10 p-10 flex flex-col gap-10 md:flex-row max-w-250 mx-auto'>
 
           <div>
             <div>
-              <h1 className='text-2xl font-bold'>O nama</h1>
+              <h1 className='text-lg font-bold'>O nama</h1>
               <h3 className='font-normal text-xl'>Autentično mesto za autentične ljude.</h3>
             </div>
-            <p className=' text-justify'>Kažu da se najbolje priče dešavaju kad krene po zlu. Mi smo tu da tim pričama damo ukus. Uz pažljivo birane craft koktele, atmosferu koja ne poznaje kompromise i ekipu koja zna zašto ste tu, nudimo utočište svima koji traže nešto autentično. Vidimo se na naopakoj strani grada.</p>
+            <p className='mt-3 text-justify'>Kažu da se najbolje priče dešavaju kad krene po zlu. Mi smo tu da tim pričama damo ukus. Uz pažljivo birane craft koktele, atmosferu koja ne poznaje kompromise i ekipu koja zna zašto ste tu, nudimo utočište svima koji traže nešto autentično. Vidimo se na naopakoj strani grada.</p>
           </div>
 
           <div className="grid grid-cols-2 gap-2 items-start">
 
             <div className="flex flex-col gap-2">
-              <img className='w-120 rounded-2xl' src="/images/galleryitems/565626998_18323074471214596_159273099872721172_n.webp" alt="Slika 1" />
-              <img className='w-120 rounded-2xl' src="/images/galleryitems/565626998_18323074471214596_159273099872721172_n.webp" alt="Slika 1" />
+              <img className='w-120 rounded-2xl' src="/images/491439758_18303200647214596_1581392481911890914_n.webp" alt="Slika 1" />
+              <img className='w-120 rounded-2xl' src="/images/650255411_18069660719535122_2794960922065814740_n.webp" alt="Slika 1" />
             </div>
 
             <div className="flex flex-col gap-2 mt-7">
-              <img className='w-120 rounded-2xl' src="/images/galleryitems/565626998_18323074471214596_159273099872721172_n.webp" alt="Slika 1" />
-              <img className='w-120 rounded-2xl' src="/images/galleryitems/565626998_18323074471214596_159273099872721172_n.webp" alt="Slika 1" />
+              <img className='w-120 rounded-2xl' src="/images/625219192_18112245100572587_7847014058427154450_n.webp" alt="Slika 1" />
+              <img className='w-120 rounded-2xl' src="/images/591138357_18330880387214596_7029328306488975246_n.webp" alt="Slika 1" />
             </div>
 
           </div>
