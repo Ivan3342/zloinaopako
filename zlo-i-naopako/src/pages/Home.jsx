@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router'
 import '../app.css'
 
+
 function Home() {
   return (
     <>
       <main>
         {/* main */}
-        <div className='flex flex-col items-center justify-center bg-[url("\public\images\pexels-fewmiracles-497047241-20011903(2).webp")] bg-center bg-cover bg-no-repeat h-215 bg-opacity-50' >
+        <div className='flex flex-col items-center justify-center bg-[url("\images\pexels-fewmiracles-497047241-20011903.webp")] bg-center bg-cover bg-no-repeat h-215 bg-opacity-50' >
           <h1 className='text-center text-white text-2xl italic w-full px-5 md:px-0 md:text-3xl lg:text-5xl xl:text-7xl'>Mesto gde se loše ideje pretvaraju u najbolje uspomene.</h1>
         </div>
         {/* about */}
@@ -22,7 +23,7 @@ function Home() {
           {/* menu */}
           <div className='md:grow text-center'>
 
-            <div className='flex flex-col gap-5 items-center justify-center h-100 rounded-xl bg-[url("\public\images\695702762_18350917681214596_5360166206163605931_n.webp")] bg-no-repeat bg-cover'>
+            <div className='flex flex-col gap-5 items-center justify-center h-100 rounded-xl bg-[url("\images\69.webp")] bg-no-repeat bg-cover'>
               <h3 className='text-white text-lg'>MENI</h3>
               <h1 className='text-white text-2xl font-medium'>Otkrijte našu ponudu</h1>
               <div className='w-50 h-0.5 bg-white'></div>
@@ -33,7 +34,7 @@ function Home() {
           {/* maps */}
           <div className='md:grow text-center'>
 
-            <div className='flex flex-col gap-5 items-center justify-center h-100 rounded-xl bg-[url("\public\images\598579395_18330967441214596_7686038251437798307_n.webp")] bg-no-repeat bg-cover bg-center'>
+            <div className='flex flex-col gap-5 items-center justify-center h-100 rounded-xl bg-[url("\images\59.webp")] bg-no-repeat bg-cover bg-center'>
               <h3 className='text-white text-lg'>LOKACIJA</h3>
               <h1 className='text-white text-2xl font-medium'>Saznajte kako doći do nas</h1>
               <div className='w-50 h-0.5 bg-white'></div>
