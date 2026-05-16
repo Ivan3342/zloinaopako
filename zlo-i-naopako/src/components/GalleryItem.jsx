@@ -4,9 +4,9 @@ import '../app.css'
 
 function GalleryItem(props) {
   return (
-    <div>
+    <div className='aspect-square overflow-hidden rounded-2xl'>
 
-        <img className='rounded-2xl w-auto h-fit object-cover' src={props.url} alt={props.alt} />
+        <img className='w-full h-full object-cover' src={props.url} alt={props.alt} />
 
     </div>
   )

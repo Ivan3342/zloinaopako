@@ -6,11 +6,11 @@ function Footer() {
     <>
     <footer className='bg-dark-coffee-900 text-dusty-olive-100 p-6'>
 
-        <div className='flex items-center gap-50'>
+        <div className='flex items-center justify-between'>
           <h1 className='text-2xl font-medium text-white'>Zapratite nas!</h1>
           <span className='flex items-center'>
-            <a href="https://www.instagram.com/__zloinaopako/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\icons\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
-            <a href="https://www.facebook.com/zloinaopakokg/"><img className='w-10 hover:shadow-xl hover:scale-110 transition-transform' src="src\assets\images\icons\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
+            <a href="https://www.instagram.com/__zloinaopako/"><img className='w-10 md:w-15 hover:shadow-xl hover:scale-110 transition-transform' src="\images\icons\instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram Logo" /></a>
+            <a href="https://www.facebook.com/zloinaopakokg/"><img className='w-10 md:w-15 hover:shadow-xl hover:scale-110 transition-transform' src="\images\icons\facebook-svgrepo-com.svg" alt="Facebook Logo" /></a>
           </span>
         </div>
 
@@ -25,7 +25,7 @@ function Footer() {
           </div>
 
           <div>
-            <h2 className='text-lg font-bold'>Navigacija</h2>
+            <h2 className='text-lg font-bold text-sandy-brown-50'>Navigacija</h2>
             <ul>
               <li><NavLink to='/'>Pocetna</NavLink></li>
               <li><NavLink to='menu'>Meni</NavLink></li>
