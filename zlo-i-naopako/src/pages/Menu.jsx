@@ -9,8 +9,6 @@ function Menu() {
   const coffees = items.filter(item => item.category === 'kafa');
   const cocktails = items.filter(item => item.category === 'kokteli');
 
-  console.log(import.meta.env.VITE_API_URL)
-
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/menu`)
       .then(res => res.json())
