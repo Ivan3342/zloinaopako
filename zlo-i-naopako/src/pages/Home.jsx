@@ -83,6 +83,17 @@ function Home() {
 
         </div>
 
+        {/* kafa za poneti */}
+
+        <div className='m-10 p-10 rounded-xl bg-[url("/public/images/texture.webp")] flex gap-5 flex-col text-white text-shadow-md md:flex-row items-center justify-center'>
+          <h1 className='grow text-2xl font-black text-center md:text-3xl lg:text-5xl'>Tvoj omiljeni ritual, sada u pokretu.</h1>
+          <div className='grow text-center md:text-left my-2'>
+            <p>Neki kažu da je kafa za poneti samo usputna stanica. Za nas, to je tvojih pet minuta čistog uživanja gde god da si krenuo. Spakovali smo vrhunski kvalitet, prepoznatljiv balans ukusa i prepoznatljiv dizajn u šolje koje savršeno pristaju tvom ritmu.</p>
+            <p>Bilo da ti treba jutarnje buđenje ili popodnevni restart, Zlo i Naopako kafa za poneti je tu da ti drži tempo.</p>
+            <p className='text-lg italic mt-5 lg:text-xl'>Jer dobra kafa nije luksuz, nego potreba.</p>
+          </div>
+        </div>
+
         <div className='flex flex-col p-10 gap-10 md:flex-row md:justify-center'>
 
           {/* menu */}
