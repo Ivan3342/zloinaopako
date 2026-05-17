@@ -6,7 +6,6 @@ const app = express()
 const path = require('path')
 const db = new Database('/app/data/cafe.db')
 
-// Seed data if table is empty
 const count = db.prepare('SELECT COUNT(*) as count FROM menu_items').get()
 
 if (count.count === 0) {
