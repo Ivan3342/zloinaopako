@@ -16,35 +16,63 @@ if (count.count === 0) {
   `)
 
   const seedData = [
-    {
-      name: 'Negroni',
-      description: 'Gin, Campari, slatki vermut',
-      price: 650,
-      category: 'kokteli',
-      image_url: '/images/negroni.webp'
-    },
-    {
-      name: 'Espresso Martini',
-      description: 'Votka, kahlua, sveže espresso',
-      price: 700,
-      category: 'kokteli',
-      image_url: '/images/espresso-martini.webp'
-    },
-    {
-      name: 'Craft Pivo',
-      description: 'Lokalno craft pivo iz Kragujevca',
-      price: 400,
-      category: 'pivo',
-      image_url: '/images/craft-pivo.webp'
-    },
-    {
-      name: 'Cappuccino',
-      description: 'Dupli espresso, pena od mleka',
-      price: 250,
-      category: 'kafa',
-      image_url: '/images/cappuccino.webp'
-    },
-  ]
+  {
+    name: 'Espresso',
+    description: '100% Arabica, čist i intenzivan ukus',
+    price: 190,
+    category: 'kafa',
+    image_url: '/images/menuitems/espresso.png'
+  },
+  {
+    name: 'Domaća kafa',
+    description: 'Tradicionalna kafa kuvana u džezvi',
+    price: 170,
+    category: 'kafa',
+    image_url: '/images/menuitems/domaca.png'
+  },
+  {
+    name: 'Cappuccino',
+    description: 'Espresso sa bogatom mlečnom penom',
+    price: 220,
+    category: 'kafa',
+    image_url: '/images/menuitems/capuccino.png'
+  },
+  {
+    name: 'Espresso sa ukusom',
+    description: 'Vanila, Čokolada, Malina...',
+    price: 270,
+    category: 'kafa',
+    image_url: '/images/menuitems/maciato.png'
+  },
+  {
+    name: 'Negroni',
+    description: 'Gin, Campari, slatki vermut',
+    price: 450,
+    category: 'kokteli',
+    image_url: '/images/menuitems/negroni.png'
+  },
+  {
+    name: 'Vodka Martini',
+    description: 'Votka, suvi vermut, maslina',
+    price: 510,
+    category: 'kokteli',
+    image_url: '/images/menuitems/vodkamartini.png'
+  },
+  {
+    name: 'Blue Lagoon',
+    description: 'Votka, Blue Curacao, limunada',
+    price: 370,
+    category: 'kokteli',
+    image_url: '/images/menuitems/bluelagoon.png'
+  },
+  {
+    name: 'Old Fashioned',
+    description: 'Burbon, biter, šećer, kora pomorandže',
+    price: 420,
+    category: 'kokteli',
+    image_url: '/images/menuitems/oldfashioned.png'
+  }
+];
 
   const seedMany = db.transaction((items) => {
     for (const item of items) insert.run(item)
