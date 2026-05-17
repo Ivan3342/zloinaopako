@@ -6,6 +6,56 @@ const app = express()
 const path = require('path')
 const db = new Database('/app/data/cafe.db')
 
+// Seed data if table is empty
+const count = db.prepare('SELECT COUNT(*) as count FROM menu_items').get()
+
+if (count.count === 0) {
+  const insert = db.prepare(`
+    INSERT INTO menu_items (name, description, price, category, image_url)
+    VALUES (@name, @description, @price, @category, @image_url)
+  `)
+
+  const seedData = [
+    {
+      name: 'Negroni',
+      description: 'Gin, Campari, slatki vermut',
+      price: 650,
+      category: 'kokteli',
+      image_url: '/images/negroni.webp'
+    },
+    {
+      name: 'Espresso Martini',
+      description: 'Votka, kahlua, sveže espresso',
+      price: 700,
+      category: 'kokteli',
+      image_url: '/images/espresso-martini.webp'
+    },
+    {
+      name: 'Craft Pivo',
+      description: 'Lokalno craft pivo iz Kragujevca',
+      price: 400,
+      category: 'pivo',
+      image_url: '/images/craft-pivo.webp'
+    },
+    {
+      name: 'Cappuccino',
+      description: 'Dupli espresso, pena od mleka',
+      price: 250,
+      category: 'kafa',
+      image_url: '/images/cappuccino.webp'
+    },
+  ]
+
+  const seedMany = db.transaction((items) => {
+    for (const item of items) insert.run(item)
+  })
+
+  seedMany(seedData)
+  console.log('✓ Database seeded')
+} else {
+  console.log(`✓ Database already has ${count.count} items, skipping seed`)
+}
+
 app.use(cors())
 app.use(express.json())
 
