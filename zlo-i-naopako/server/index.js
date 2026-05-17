@@ -6,7 +6,23 @@ const app = express()
 const path = require('path')
 const db = new Database('/app/data/cafe.db')
 
+app.use(cors())
+app.use(express.json())
+
+// Create table if it doesn't exist — just like SQL you already know
+db.exec(`
+  CREATE TABLE IF NOT EXISTS menu_items (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    name      TEXT NOT NULL,
+    description TEXT,
+    price     REAL NOT NULL,
+    category  TEXT,
+    image_url TEXT
+  )
+`)
+
 const count = db.prepare('SELECT COUNT(*) as count FROM menu_items').get()
+
 
 if (count.count === 0) {
   const insert = db.prepare(`
@@ -82,21 +98,6 @@ if (count.count === 0) {
 } else {
   console.log(`✓ Database already has ${count.count} items, skipping seed`)
 }
-
-app.use(cors())
-app.use(express.json())
-
-// Create table if it doesn't exist — just like SQL you already know
-db.exec(`
-  CREATE TABLE IF NOT EXISTS menu_items (
-    id        INTEGER PRIMARY KEY AUTOINCREMENT,
-    name      TEXT NOT NULL,
-    description TEXT,
-    price     REAL NOT NULL,
-    category  TEXT,
-    image_url TEXT
-  )
-`)
 
 // GET all items
 app.get('/api/menu', (req, res) => {
