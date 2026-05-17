@@ -2,6 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router'
 
 function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
     <footer className='bg-dark-coffee-900 text-dusty-olive-100 p-6'>
@@ -27,19 +35,18 @@ function Footer() {
           <div>
             <h2 className='text-lg font-bold text-sandy-brown-50'>Navigacija</h2>
             <ul>
-              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='/'>Pocetna</NavLink></li>
-              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='menu'>Meni</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink onClick={scrollToTop} to='/'>Pocetna</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink onClick={scrollToTop} to='menu'>Meni</NavLink></li>
               <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><a href='https://maps.app.goo.gl/QKjB52n812CXhGyx8'>Lokacija</a></li>
-              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink to='gallery'>Galerija</NavLink></li>
+              <li className='border-2 border-transparent hover:border-b-2 hover:border-b-sandy-brown-300 w-fit transition-all'><NavLink onClick={scrollToTop} to='gallery'>Galerija</NavLink></li>
             </ul>
           </div>
         </div>
 
-        <h3 className='text-center mt-7 mb-2'>&copy; 2026 Ivan Stojadinović, sva prava zadržana</h3>
-
+        <h3 className='text-center mt-7 mb-2'>&copy; 2026 Ivan Stojadinović, sva prava zadržana</h3> 
       </footer>
       </>
   )
 }
 
-export default Footer
+export default  Footer
