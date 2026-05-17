@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const app = express()
 const path = require('path')
-const db = new Database(path.join(__dirname, 'cafe.db'))
+const db = new Database('/app/data/cafe.db')
 
 app.use(cors())
 app.use(express.json())
